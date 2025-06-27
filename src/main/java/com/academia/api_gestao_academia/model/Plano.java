@@ -6,24 +6,24 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Exercicio {
+public class Plano {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String descricao;
     private String nome;
+    private float valor;
     
-    public Exercicio() {}
-
-    public String getDescricao() {
-        return descricao;
-    }
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
+    public Plano() {}
+    
     public String getNome() {
         return nome;
     }
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    public float getValor() {
+        return valor;
+    }
+    public void setValor(float valor) {
+        this.valor = valor;
     }
 }

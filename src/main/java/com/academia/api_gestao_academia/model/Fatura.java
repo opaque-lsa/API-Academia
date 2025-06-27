@@ -14,7 +14,9 @@ public class Fatura {
     private float valorTotal;
     private LocalDate dataVencimento;
     private LocalDate dataEmissao;
-    private String Status;
+    private String status;
+
+    public Fatura() {}
     
     public float getValorTotal() {
         return valorTotal;
@@ -35,9 +37,9 @@ public class Fatura {
         this.dataEmissao = dataEmissao;
     }
     public String getStatus() {
-        return Status;
+        return status;
     }
     public void setStatus(String status) {
-        Status = status;
+        this.status = status;
     }
 }
